@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Karla-Regular.ttf">
+            <string>Karla-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="289" id="auR-hD-7tb" customClass="AboutUsCell" customModule="ServiceLane" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="289"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auR-hD-7tb" id="FfT-eA-NZN">
+                <rect key="frame" x="0.0" y="0.0" width="443" height="288.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dxR-LB-5Lg">
+                        <rect key="frame" x="20" y="11" width="403" height="221.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-2c-HtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="403" height="193.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ith-ui-nZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="193.5" height="193.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SJC-OG-INC">
+                                        <rect key="frame" x="209.5" y="0.0" width="193.5" height="193.5"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dIX-2c-HtQ" secondAttribute="height" multiplier="2:1" constant="16" id="2XX-NS-DKY"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48X-B7-P7a">
+                                <rect key="frame" x="50.5" y="201.5" width="302" height="20"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.13725490196078433" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="48X-B7-P7a" firstAttribute="width" secondItem="dxR-LB-5Lg" secondAttribute="width" multiplier="0.75" id="Fqo-ni-7lZ"/>
+                            <constraint firstAttribute="width" secondItem="dIX-2c-HtQ" secondAttribute="width" id="TXL-hE-fzQ"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="dxR-LB-5Lg" secondAttribute="trailing" id="CZo-yx-zxt"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dxR-LB-5Lg" secondAttribute="bottomMargin" constant="16" id="ESD-pc-M5i"/>
+                    <constraint firstItem="dxR-LB-5Lg" firstAttribute="leading" secondItem="FfT-eA-NZN" secondAttribute="leadingMargin" id="fMR-YV-yZR"/>
+                    <constraint firstItem="dxR-LB-5Lg" firstAttribute="top" secondItem="FfT-eA-NZN" secondAttribute="topMargin" id="uzU-2w-3Jf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionView" destination="48X-B7-P7a" id="WK2-gl-UPc"/>
+                <outlet property="firstImage" destination="ith-ui-nZP" id="tBf-NO-okZ"/>
+                <outlet property="secondImage" destination="SJC-OG-INC" id="cDL-iA-jrQ"/>
+            </connections>
+            <point key="canvasLocation" x="7.5" y="-20.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,129 @@
+PODS:
+  - ActiveLabel (1.0.1)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Cache (5.2.0)
+  - CHIPageControl/Jaloro (0.1.7)
+  - Cosmos (17.0.0)
+  - FacebookCore (0.5.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FBSDKCoreKit (4.38.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.38.1):
+    - FBSDKCoreKit
+  - ImagePicker (3.2.0)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Lightbox (2.3.0):
+    - Imaginary (~> 4.0)
+  - McPicker (2.0.0)
+  - Networking (4.4.0)
+  - RSSelectionMenu (5.3.2)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SwiftValidators (8.0.0)
+  - SwiftyJSON (4.2.0)
+  - SwiftyStoreKit (0.14.1)
+  - Toast-Swift (4.0.0)
+  - UIEmptyState (4.0.1)
+  - "UITextView+Placeholder (1.2.1)"
+  - XLPagerTabStrip (8.1.0)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - CHIPageControl/Jaloro
+  - Cosmos
+  - FacebookCore
+  - FacebookLogin
+  - ImagePicker (from `https://github.com/appsailor/ImagePicker.git`, branch `feature/Swift-4.2`)
+  - IQKeyboardManagerSwift
+  - Lightbox
+  - McPicker
+  - Networking
+  - RSSelectionMenu
+  - SDWebImage
+  - SwiftValidators
+  - SwiftyJSON
+  - SwiftyStoreKit
+  - Toast-Swift
+  - UIEmptyState
+  - "UITextView+Placeholder"
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Bolts
+    - Cache
+    - CHIPageControl
+    - Cosmos
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Imaginary
+    - IQKeyboardManagerSwift
+    - Lightbox
+    - McPicker
+    - Networking
+    - RSSelectionMenu
+    - SDWebImage
+    - SwiftValidators
+    - SwiftyJSON
+    - SwiftyStoreKit
+    - Toast-Swift
+    - UIEmptyState
+    - "UITextView+Placeholder"
+    - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  ImagePicker:
+    :branch: feature/Swift-4.2
+    :git: https://github.com/appsailor/ImagePicker.git
+
+CHECKOUT OPTIONS:
+  ImagePicker:
+    :commit: aa0e56d613dd15067ded53a5cab9bf46d46fe113
+    :git: https://github.com/appsailor/ImagePicker.git
+
+SPEC CHECKSUMS:
+  ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  CHIPageControl: bbe1ddd0c688c02ec65b7f7e7d34551a3d16f37c
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
+  FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
+  ImagePicker: 456b7fab7022f1f7d8adad42b43d20963c9b5cea
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Lightbox: d317750e4132bfb871a5307cfe0a2c7d6a583c65
+  McPicker: 1d11ad8c07c337a16dd9397e45f321125304cbb0
+  Networking: cbef47ab030af248248c26a696adb88989b52ef1
+  RSSelectionMenu: cd8e2d2b87f0ab0cefb22b69cb97eb44923373ed
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftValidators: 282173fae9e2fee864212b0128fcb25a81d53fba
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyStoreKit: a5cdece4327f3943eb72fa81aebe3aa6684b5eab
+  Toast-Swift: 594b5c5e5129f15438e410207e43287f027b3c00
+  UIEmptyState: 767376694d9402452fb3c0a5a5283176c6a53c92
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
+
+PODFILE CHECKSUM: 9de2234358d5c41e73ab8f6ec856b59ffcecf7bf
+
+COCOAPODS: 1.6.0.beta.2

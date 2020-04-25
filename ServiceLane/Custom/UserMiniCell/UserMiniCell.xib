@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Karla-Bold.ttf">
+            <string>Karla-Bold</string>
+        </array>
+        <array key="Karla-Regular.ttf">
+            <string>Karla-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="FFX-dl-e7p" customClass="UserMiniCell" customModule="ServiceLane" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enn-kv-Wsv">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zzy-pv-Vvk">
+                                <rect key="frame" x="8" y="8" width="399" height="72"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-r2-iDz" customClass="CircleImageView" customModule="ServiceLane" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="48" id="DCc-EI-LH0"/>
+                                            <constraint firstAttribute="width" secondItem="ZbX-r2-iDz" secondAttribute="height" multiplier="1:1" id="jnC-y2-bGc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-hW-Dkb">
+                                        <rect key="frame" x="56" y="0.0" width="343" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enw-uh-1MC">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="15"/>
+                                                <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.47058823529411764" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSL-tC-hMY" customClass="CosmosView" customModule="Cosmos">
+                                                <rect key="frame" x="0.0" y="19" width="343" height="15"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.98431372549019602" green="0.90196078431372551" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                        <color key="value" red="0.98431372549019602" green="0.90196078431372551" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                        <color key="value" red="0.98431372549999996" green="0.90196078430000004" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="filledBorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                        <color key="value" red="0.98431372549999996" green="0.90196078430000004" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-lb-DjB">
+                                                <rect key="frame" x="0.0" y="38" width="343" height="15"/>
+                                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-4N-BL8">
+                                                <rect key="frame" x="0.0" y="57" width="343" height="15"/>
+                                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="7Sz-lj-DML"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZbX-r2-iDz" firstAttribute="width" secondItem="Zzy-pv-Vvk" secondAttribute="width" multiplier="0.3" priority="750" id="r6F-i0-HU6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zzy-pv-Vvk" secondAttribute="bottom" constant="8" id="80c-oX-lwv"/>
+                            <constraint firstItem="Zzy-pv-Vvk" firstAttribute="top" secondItem="enn-kv-Wsv" secondAttribute="top" constant="8" id="XOp-Jf-BK6"/>
+                            <constraint firstItem="Zzy-pv-Vvk" firstAttribute="leading" secondItem="enn-kv-Wsv" secondAttribute="leading" constant="8" id="tT3-8J-Z8q"/>
+                            <constraint firstAttribute="trailing" secondItem="Zzy-pv-Vvk" secondAttribute="trailing" constant="8" id="yyE-on-ooe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.77647058820000003" green="0.78039215689999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="enn-kv-Wsv" firstAttribute="top" secondItem="FFX-dl-e7p" secondAttribute="top" id="0zF-6C-YBP"/>
+                <constraint firstItem="enn-kv-Wsv" firstAttribute="leading" secondItem="FFX-dl-e7p" secondAttribute="leading" id="DC2-S3-08W"/>
+                <constraint firstAttribute="trailing" secondItem="enn-kv-Wsv" secondAttribute="trailing" id="Yg3-gt-7ol"/>
+                <constraint firstAttribute="bottom" secondItem="enn-kv-Wsv" secondAttribute="bottom" id="jbR-Aj-VJP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ymx-br-GiQ"/>
+            <size key="customSize" width="415" height="148"/>
+            <connections>
+                <outlet property="avatar" destination="ZbX-r2-iDz" id="mWT-LW-cwd"/>
+                <outlet property="category" destination="1dT-lb-DjB" id="yEb-3r-RXa"/>
+                <outlet property="name" destination="Enw-uh-1MC" id="myV-Wy-W9y"/>
+                <outlet property="parish" destination="0JD-4N-BL8" id="PFk-K9-lBK"/>
+                <outlet property="rating" destination="cSL-tC-hMY" id="0uS-SB-aZV"/>
+                <outlet property="rootView" destination="enn-kv-Wsv" id="Gky-Sa-kYE"/>
+            </connections>
+            <point key="canvasLocation" x="-168.5" y="372"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="380" height="380"/>
+    </resources>
+</document>

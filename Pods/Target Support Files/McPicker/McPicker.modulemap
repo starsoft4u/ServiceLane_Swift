@@ -1,0 +1,6 @@
+framework module McPicker {
+  umbrella header "McPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
